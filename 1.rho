@@ -1,0 +1,7 @@
+new a,stdout(`rho:io:stdout`) in{
+    a!(1)|
+    for(x<-a){
+    stdout!(*x)
+    }
+    
+}
