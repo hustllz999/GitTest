@@ -1,0 +1,13 @@
+// A simple Hello World contract
+
+new helloworld,out(`rho:io:stdout`) in {
+    contract helloworld( world ) = {
+        for( msg <- world ) {
+            out!(*msg)
+        }
+    } |
+    new world in {
+        helloworld!(*world) |
+        world!("Hello World")
+    }
+}
